@@ -1,15 +1,50 @@
 .callout {
-	
+    max-width: 400px;
+    /* maximum width */
+    margin: 10px auto;
+    /* center with margin */
+    border: 1px solid #003366;
+    /* border around box */
+    padding: 15px;
+    /* inner spacing */
+    background-color: #003399;
+    /* deep blue background */
+    color: #ffffff;
+    /* white text color */
+
 }
 
 .callout img {
-	
+    float: right;
+    /* position image to the right */
+    margin: 10px;
+    /* space around image */
+    border: 1px solid #ffffff;
+    /* thin white border */
+    padding: 5px;
+    /* inner spacing */
+    background-color: #003366;
+    /* background behind image */
+    width: 80px;
+    /* fixed width */
+    height: auto;
+    /* maintain aspect ratio */
 }
 
 blockquote {
-	
+    margin: 15px 0;
+    /* vertical spacing */
 }
 
 cite {
-	
+    display: block;
+    /* make citation a block element */
+    border-top: 1px solid #ffffff;
+    /* top border */
+    padding-top: 10px;
+    /* space above text */
+    text-align: right;
+    /* align to the right */
+    font-size: 0.9em;
+    /* sl.....ightly smaller font */
 }
