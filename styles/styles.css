@@ -1,29 +1,54 @@
+:root {
+    --primary-color: darkblue;
+    --secondary-color: steelblue;
+    --text-color: #333;
+    --background-light: #eee;
+    --border-color: rgb(0 0 0 / 0.2);
+    --shadow-color: gray;
+    --max-width: 840px;
+    --aside-width: 20rem;
+    --spacing: 1rem;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
 main {
-    max-width: 840px;
+    max-width: var(--max-width);
 }
 
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--spacing);
 }
 
 nav a {
     color: white;
     padding: 20px;
     display: block;
+    text-decoration: none;
+}
 
+nav a:hover {
+    background-color: var(--secondary-color);
 }
 
 h1 {
-    color: steelblue;
+    color: var(--secondary-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--secondary-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
+    max-width: 100%;
 }
 
 p {
@@ -31,22 +56,24 @@ p {
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: var(--aside-width);
+    margin: var(--spacing);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing);
+    background-color: var(--background-light);
+    color: var(--text-color);
     text-align: center;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    max-width: 100%;
 }
 
 footer {
-    margin-top: 1em;
+    margin-top: var(--spacing);
     border-top: 1px solid #000;
     text-align: center;
+    font-size: 0.9em;
 }
