@@ -32,7 +32,7 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
-    color: var(--secondary-color);
+
 }
 
 h1,
@@ -56,6 +56,7 @@ article {
 
 .hero {
     position: relative;
+    margin-top: 20px;
 }
 
 .hero img {
@@ -76,27 +77,48 @@ h1 {
 
 }
 
-.hero article {
+h2 {
+    text-align: center;
+    margin: 30px auto;
+    padding: 12px;
+    width: 80%;
+    border: 2px solid var(--accent1-color);
+    /* dark slate border */
+    background: var(--secondary-color);
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.hero h1 {
     position: absolute;
-    top: 100px;
-    /* distance from the top of the page */
-    left: 220px;
-    /* distance from the left (e.g., after a sidebar) */
-    right: 20px;
-    /* spacing from the right edge */
-    bottom: 20px;
-    /* spacing from the bottom edge */
-    background-color: #ffffff;
-    /* white background for readability */
-    padding: 20px;
-    /* inner spacing */
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    background-color: rgba(38, 70, 83, 0.6);
+    /* accent1-color with transparency */
+    color: #fff;
+    font-family: var(--heading-font);
+    text-align: center;
+    border-radius: 6px;
+    max-width: 70%;
+}
+
+.hero article {
+    position: static;
+    margin: 20px auto;
+    max-width: 80%;
+    background: var(--secondary-color);
+    padding: 16px;
+    border: 2px solid var(--accent1-color);
+    color: var(--accent1-color);
+    font-family: var(--body-font);
+    border-radius: 6px;
 }
 
 .hero article img {
     float: right;
-    width: 230px;
+    width: 200px;
+    margin-left: 12px;
 
 }
