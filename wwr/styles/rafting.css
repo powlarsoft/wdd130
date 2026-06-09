@@ -32,6 +32,7 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+    color: var(--secondary-color);
 }
 
 h1,
