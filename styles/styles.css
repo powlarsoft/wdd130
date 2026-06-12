@@ -17,35 +17,71 @@
     --font-family: Arial, sans-serif;
 }
 
-body {
-    font-size: 16px;
-    font-family: Roboto, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-main {
+/* Refactor header, grid, and footer to share max-width and center */
+header,
+.grid,
+footer {
     max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 nav {
-    background-color: var(--primary-color);
-    padding: var(--spacing);
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    /* flexbox applied */
+    justify-content: space-evenly;
+    /* evenly spaced links */
+    align-items: center;
+    /* vertically centered */
 }
 
 nav a {
-    color: white;
-    padding: 20px;
     display: block;
+    padding: 0.5rem 1rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 nav a:hover {
     background-color: var(--secondary-color);
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: var(--aside-width) 1fr;
+    /* aside left, main right */
+    gap: var(--spacing);
+    align-items: start;
+}
+
+main {
+    grid-column: 2/3;
+    /* main on the right */
+    margin: 1rem;
+}
+
+aside {
+    grid-column: 1/2;
+    /* aside on the left */
+    grid-row: 1/2;
+    width: var(--aside-width);
+    position: relative;
+}
+
 h1 {
     color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: var(--spacing);
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 main img {
@@ -65,26 +101,18 @@ p {
 }
 
 aside {
-    width: var(--aside-width);
     margin: var(--spacing);
     border: 1px solid var(--border-color);
     padding: var(--spacing);
     background-color: var(--background-light);
     color: var(--text-color);
     text-align: center;
-    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
     max-width: 100%;
-}
-
-aside h2 {
-    position: absolute;
-    top: 50px;
-    right: 130px;
 }
 
 footer {
@@ -94,7 +122,6 @@ footer {
     font-size: 0.9em;
 }
 
-/* Class Selectors */
 .box {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);

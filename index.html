@@ -1,4 +1,3 @@
-<!--Updates made June, 2026-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,68 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Powell Nana | WDD 130</title>
-
-    <meta name="description"
-      content="PowLarSOFT Technology, led by CEO Powell Nana, is a Nigerian-based solution vendor.">
-    <meta name="author" content="Powell Nana">
-
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
+            <!-- Navigation links updated to include LinkedIn and Facebook -->
             <a href="#">Home</a>
             <a href="wwr/">Rafting Website</a>
-            <a href="https://facebook.com">Facebook</a>
-            <a href="https://linkedin.com.">Portfolio</a>
+            <a href="siteplan.html">Siteplan</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
         </nav>
     </header>
 
-    <main>
-        <h1>Powell Nana | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Powell Nana" width="200">
-        <p>Welcome to my portfolio homepage. I am Powell Nana, CEO of <a
-              href="https://www.powlarsoft.com.ng" target="_blank">PowLarSOFT Technology</a>, a
-            Nigerian-based solution vendor specializing in web design, software development, and IT
-            consulting. Alongside my role as CEO of PowLarSOFT Technology, I am also a student of
-            BYU Pathway Worldwide, where I am studying Software Development. This academic journey
-            allows me to continually improve my skills in programming, web design, and software
-            engineering, strengthening the expertise I apply to client projects and innovative
-            solutions.</p>
-        <p>As a web designer, I create modern, responsive websites for businesses, NGOs, and
-            startups. My work combines creativity, functionality, and user-focused design.</p>
-        <p>Some of my featured projects include <a href="https://www.acdcartisans.com"
-              target="_blank">ACDC Artisans</a>, a professional artisan services platform, and other
-            client websites built to showcase their unique brands.</p>
+    <!-- NEW: Wrap main and aside inside a grid container -->
+    <div class="grid">
+        <main>
+            <h1>Powell Nana | WDD 130</h1> <!-- h1 will have bottom border via CSS -->
+            <img src="images/profile.jpg" alt="Powell Nana" width="200">
+            <p>
+                Welcome to my portfolio homepage. I am Powell Nana, CEO of
+                <a href="https://www.powlarsoft.com.ng" target="_blank">PowLarSOFT Technology</a>,
+                a Nigerian-based solution vendor specializing in web design, software development,
+                and IT
+                consulting.
+                Alongside my role as CEO of PowLarSOFT Technology, I am also a student of BYU
+                Pathway Worldwide,
+                where I am studying Software Development. This academic journey allows me to
+                continually improve
+                my skills in programming, web design, and software engineering, strengthening the
+                expertise I
+                apply
+                to client projects and innovative solutions.
+            </p>
 
-        <ul class="box indent">
-            <!-- Link to Philadelphia Pennsylvania Temple -->
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/philadelphia-pennsylvania-temple"
-                  target="_blank">Philadelphia Pennsylvania Temple</a></li>
+            <p>
+                As a web designer, I create modern, responsive websites for businesses, NGOs, and
+                startups.
+                My work combines creativity, functionality, and user-focused design.
+            </p>
 
-            <!-- Link to Paris France Temple -->
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple"
-                  target="_blank">Paris France Temple</a></li>
+            <p>
+                Some of my featured projects include
+                <a href="https://www.acdcartisans.com" target="_blank">ACDC Artisans</a>,
+                a professional artisan services platform, and other client websites built to
+                showcase their
+                unique brands.
+            </p>
 
-            <!-- Link to Berlin Germany Temple -->
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/lima-peru-los-olivos-temple"
-                  target="_blank">Lima Peru Los Olivos Temple</a></li>
-        </ul>
 
+            <ul class="box indent">
+                <li><a href="https://www.churchofjesuschrist.org/temples/details/philadelphia-pennsylvania-temple"
+                      target="_blank">Philadelphia Pennsylvania Temple</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple"
+                      target="_blank">Paris France Temple</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/temples/details/berlin-germany-temple"
+                      target="_blank">Berlin Germany Temple</a></li>
+            </ul>
+        </main>
 
-    </main>
-
-    <aside class="box">
-        <h2>Nigeria</h2>
-        <img src="images/nigeria.jpg" alt="Nigeria" width="250">
-        <p>Nigeria is my country, known for its rich culture, diversity, and vibrant cities.</p>
-    </aside>
+        <aside class="box">
+            <h2>Nigeria</h2>
+            <img src="images/nigeria.jpg" alt="Nigeria" width="250">
+            <p>Nigeria is my country, known for its rich culture, diversity, and vibrant cities.</p>
+        </aside>
+    </div>
 
     <footer>
         <p>&copy; 2026 Powell Nana, Nigeria</p>
