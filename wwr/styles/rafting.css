@@ -106,17 +106,24 @@ h2 {
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    background: rgba(244, 162, 97, 0.9);
+    background: rgba(244, 162, 97, 0.6);
+    /* lighter + transparent */
     padding: 20px;
     border: 2px solid var(--accent1-color);
     border-radius: 8px;
     color: var(--accent1-color);
 }
 
+.hero article p {
+    flex: 1;
+    /* text takes available space on the left */
+}
+
 .hero article img {
     width: 200px;
     border-radius: 6px;
     margin-left: 20px;
+    /* image sits on the right */
 }
 
 /* History Section */
@@ -186,12 +193,12 @@ footer .socialmedia {
     gap: 12px;
 }
 
-/* ✅ Fix: remove underline from social media links */
 footer .socialmedia a {
     text-decoration: none;
     display: inline-block;
 }
 
+/* fix */
 footer .socialmedia img {
     width: 40px;
     border-radius: 4px;
