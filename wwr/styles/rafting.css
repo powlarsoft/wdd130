@@ -186,6 +186,12 @@ footer .socialmedia {
     gap: 12px;
 }
 
+/* ✅ Fix: remove underline from social media links */
+footer .socialmedia a {
+    text-decoration: none;
+    display: inline-block;
+}
+
 footer .socialmedia img {
     width: 40px;
     border-radius: 4px;
