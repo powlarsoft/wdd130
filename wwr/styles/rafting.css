@@ -112,7 +112,6 @@ h2 {
     border: 2px solid var(--accent1-color);
     border-radius: 8px;
     color: var(--white-color);
-    /* ✅ text is now white */
     font-family: var(--body-font);
 }
 
