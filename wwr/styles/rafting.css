@@ -107,11 +107,13 @@ h2 {
     justify-content: space-between;
     width: 80%;
     background: rgba(244, 162, 97, 0.6);
-    /* lighter + transparent */
+    /* lighter transparent background */
     padding: 20px;
     border: 2px solid var(--accent1-color);
     border-radius: 8px;
-    color: var(--accent1-color);
+    color: var(--white-color);
+    /* ✅ text is now white */
+    font-family: var(--body-font);
 }
 
 .hero article p {
